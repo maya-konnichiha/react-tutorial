@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            const app = document.getElementById('app');
+
+            // <h1>タグを作成する
+            const header = document.createElement('h1');
+
+            // テキストを作成する
+            const text ='Develop. Preview. Ship.';
+            const headerContent = document.createTextNode(text);
+
+            // <h1> タグにテキストを追加する
+            header.appendChild(headerContent);
+
+            // #app (<div>タグ)に <h1>タグを追加する
+            app.appendChild(header);
+        </script>
+    </body>
+</html>
